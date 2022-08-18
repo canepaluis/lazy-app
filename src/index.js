@@ -2,6 +2,7 @@
  * This file is just a silly example to show everything working in the browser.
  * When you're ready to start on your site, clear the file. Happy hacking!
  **/
+import {registerImage} from './lazy'
 
 console.log('Happy hacking :)')
 const reference_div = document.querySelector("#images");
@@ -31,9 +32,10 @@ function NewContainer(){
 function NewContentCreation(){
     const newimage = NewImage();
     const newcontainer = NewContainer();
-
+    
     newcontainer.append(newimage);
     reference_div.append(newcontainer);
+    registerImage(newimage);
 }
 
 
