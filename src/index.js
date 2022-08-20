@@ -17,7 +17,7 @@ function NewImage(){
     const newimage = document.createElement("img");
     newimage.width = "320";
     newimage.classList.add("mx-auto");
-    newimage.src = `https://randomfox.ca/images/${randomNumber()}.jpg`;
+    newimage.dataset.src = `https://randomfox.ca/images/${randomNumber()}.jpg`;
 
     return newimage;
 }
